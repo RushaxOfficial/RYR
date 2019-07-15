@@ -1,0 +1,21 @@
+<!--START CONTENT FOR LEVEL 1 MEMBERS-->
+[s2If current_user_is(s2member_level1)]
+    [s2Drip access="level1" from_day="0"]
+<div class="alert alert-danger">This course is not available until you become a paying member.</div>[/s2Drip][/s2If]
+<!--/END CONTENT FOR LEVEL 1 MEMBERS-->
+
+<!--START CONTENT FOR LEVEL 2 MEMBERS-->
+[s2If current_user_is(s2member_level2)]
+	<!--CONTENT FOR DAYS 0 - 30 FOR LEVEL 2 MEMBERS-->
+	[s2Drip access="level2" from_day="0" to_day="31"]<div class="alert alert-danger">This course is not available until you reach being a member for at least <strong>31 days!</strong> </div>[/s2Drip]
+	<!--/CONTENT FOR DAYS 0 - 30 FOR LEVEL 2 MEMBERS-->
+<!--/END CONTENT FOR LEVEL 2 MEMBERS-->
+
+<!--START CONTENT FOR LEVEL 2 MEMBERS FROM DAY 31-->
+[s2Drip access="level2" from_day="31"]<iframe src="https://player.vimeo.com/video/338477895" width="100%" height="350" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>[/s2Drip][/s2If]
+<!--/END CONTENT FOR LEVEL 2 MEMBERS FROM DAY 31-->
+
+
+<!--START CONTENT FOR LEVEL 3 MEMBERS-->
+[s2If current_user_is(s2member_level3)]<iframe src="https://player.vimeo.com/video/338477895" width="100%" height="350" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>[/s2If]
+<!--/END CONTENT FOR LEVEL 3 MEMBERS-->
